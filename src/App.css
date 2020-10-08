@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
+}
+:root {
+	--impred: #e63946;
+	--honeydeuw: #cfe1e6;
+	--powblue: #a8dadc;
+	--celblue: #457b9d;
+	--purblue: #1d3557;
+}
+.App {
+	width: 100%;
+	height: 90vh;
+}
+.container {
+	margin: 0 auto;
+	width: 400px;
+}
+header {
+	background: var(--purblue);
+	color: white;
+	position: absolute;
+	width: 400px;
+	padding: 0.8rem 0;
+	top: 0;
+	border-radius: 0 0 1.8rem 1.8rem;
+	display: flex;
+}
+header > h1 {
+	margin: 0.5rem 2rem;
+}
+.sign-out {
+	border: none;
+	outline: none;
+	background: var(--impred);
+	color: white;
+	font-size: 1rem;
+	border-radius: 0.2rem;
+	margin-top: 0.4rem;
+	padding: 0 0.5rem;
+}
+.sign-in {
+	display: block;
+	color: white;
+	background: var(--impred);
+	border: none;
+	outline: none;
+	border-radius: 0.2rem;
+	padding: 0.7rem;
+	font-size: 1.2rem;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+section {
+	background: var(--honeydeuw);
+	height: 89vh;
+
+	background-image: url(https://source.unsplash.com/random);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 0 0 1.8rem 1.8rem;
+}
+
+main {
+	overflow-y: auto;
+	height: 91%;
+	margin-top: 3.4rem;
+	background: rgba(0, 0, 0, 0.514);
+}
+
+.message {
+	display: flex;
+	/* padding: 0rem; */
+	margin: 2rem 1rem;
+}
+.message > img {
+	height: 2.9rem;
+	border-radius: 100%;
+}
+.sent > p,
+.received > p {
+	background: var(--celblue);
+	color: white;
+	padding: 0.8rem;
+	font-size: 1.1rem;
+	margin: 0 1rem;
+}
+.received > p {
+	background: var(--impred);
+	color: white;
+	border-radius: 1rem 1rem 1rem 0.2rem;
+}
+.sent {
+	flex-direction: row-reverse;
+}
+.sent > p {
+	border-radius: 1rem 1rem 0.2rem 1rem;
+}
+
+form {
+	display: flex;
+	background: var(--celblue);
+	padding: 0.9rem 0.8rem;
+	border-radius: 0 0 1rem 1rem;
+}
+input {
+	background: var(--purblue);
+	border: none;
+	outline: none;
+	font-size: 1.5rem;
+	flex: 7;
+	padding: 0.5rem 1rem;
+	color: white;
+	border-radius: 2rem;
+	width: 100%;
+}
+form > button {
+	margin-left: 0.3rem;
+	flex: 1;
+	background: var(--purblue);
+	border: none;
+	outline: none;
+	border-radius: 100%;
+	cursor: pointer;
+}
+form > button > svg {
+	font-size: 1.5rem;
+	fill: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--purblue);
+	border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--celblue);
+}
