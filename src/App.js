@@ -7,13 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 firebase.initializeApp({
-	apiKey: "AIzaSyAhLHPsDVMFFW1J0yiLgQoXurtCkSxlBIo",
-	authDomain: "vibezchat-f7b0f.firebaseapp.com",
-	databaseURL: "https://vibezchat-f7b0f.firebaseio.com",
-	projectId: "vibezchat-f7b0f",
-	storageBucket: "vibezchat-f7b0f.appspot.com",
-	messagingSenderId: "153376265804",
-	appId: "1:153376265804:web:3be1c4f204d6278f5146e9",
+	
 });
 
 const auth = firebase.auth();
