@@ -1,3 +1,6 @@
+VIEW PROJECT ON
+https://vibezchat-f7b0f.web.app
+
 ## Available Scripts
 
 In the project directory, you can run:
